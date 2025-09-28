@@ -46,20 +46,20 @@ auth_sqlite_python/
    ```bash
    python run.py
    ```
-   Server runs on `http://0.0.0.0:8000`
+   Server runs on `http://0.0.0.0:8001`
 
 3. **Test endpoints:**
    ```bash
    # Health check
-   curl http://localhost:8000/health
+   curl http://localhost:8001/health
 
    # Register user
-   curl -X POST http://localhost:8000/register \
+   curl -X POST http://localhost:8001/register \
      -H "Content-Type: application/json" \
      -d '{"username": "testuser", "password": "testpass123", "full_name": "Test User"}'
 
    # Login
-   curl -X POST http://localhost:8000/login \
+   curl -X POST http://localhost:8001/login \
      -H "Content-Type: application/json" \
      -d '{"username": "testuser", "password": "testpass123"}'
    ```
