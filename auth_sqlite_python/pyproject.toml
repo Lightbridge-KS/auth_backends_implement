@@ -1,0 +1,13 @@
+[project]
+name = "auth-sqlite-python"
+version = "0.1.0"
+description = "Demonstration of Authentication with SQLite in Python"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "fastapi>=0.117.1",
+    "PyJWT>=2.10.0",
+    "python-multipart>=0.0.20",
+    "uvicorn>=0.37.0",
+]
